@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ambil data dari form
     $name = htmlspecialchars($_POST['name']);
